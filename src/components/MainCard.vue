@@ -1,41 +1,8 @@
 <template>
     <div class="wrapper">
         <div class="main-container">
-            <div class="container-one">
-                <div class="profil">
-                    <img src="../assets/Github.png" alt="">
-                    <h3>Name her</h3>
-                    <p>Student</p>
-                </div>
-                <div class="social-links">
-                        <div class="link">
-                            <a href="">
-                            <img src="../assets/Github.png" alt="">
-                            <h2>Phone</h2>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="">
-                            <img src="../assets/Github.png" alt="">
-                            <h2>Email</h2>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="">
-                            <img src="../assets/Github.png" alt="">
-                            <h2>Github</h2>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="">
-                            <img src="../assets/Github.png" alt="">
-                            <h2>Linkedin</h2>
-                            </a>
-                        </div>
-                </div>
-            </div>
-        <div class="container-two">
-            <div class="about me">
+            <div class="container-two">
+            <div class="about 1me">
                 <h1>About me</h1>
                 <p>Insert information her
                     Insert information her
@@ -72,10 +39,13 @@
             <div class="technology-section">
                 <h1>Technologies Studied</h1>
                 <div class="logos">
-                    <img src="../assets/Github.png" alt="">
-                    <img src="../assets/Github.png" alt="">
-                    <img src="../assets/Github.png" alt="">
-                    <img src="../assets/Github.png" alt="">
+                    <img src="../assets/java.png" alt="">
+                    <img src="../assets/python.png" alt="">
+                    <img src="../assets/html-5.png" alt="">
+                    <img src="../assets/css-3.png" alt="">
+                    <img src="../assets/js.png" alt="">
+                    <img src="../assets/vue.png" alt="">
+                    <img src="../assets/mysql.png" alt="">
                 </div>
             </div>
             <div class="button-container">
@@ -87,6 +57,39 @@
                 </div>
             </div>
         </div>
+            <div class="container-one">
+                <div class="profile">
+                    <img src="../assets/Selfie.png" alt="">
+                    <h3>Jonatan Andre Vevang</h3>
+                    <p>Studying Computer Engineering at NTNU in Trondheim</p>
+                </div>
+                <div class="social-links">
+                        <div class="link">
+                            <a href="">
+                            <img src="../assets/Phone.png" alt="">
+                            <h2>Phone</h2>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="mailto:javevang1@gmail.com">
+                            <img src="../assets/Email.png" alt="">
+                            <h2>Email</h2>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="https://github.com/Jonabarce">
+                            <img src="../assets/Github.png" alt="">
+                            <h2>Github</h2>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="https://www.linkedin.com/in/jonatan-andre-vevang-53120b263/">
+                            <img src="../assets/Linkedin.png" alt="">
+                            <h2>Linkedin</h2>
+                            </a>
+                        </div>
+                </div>
+            </div>
     </div>
 </div>
 </template>
@@ -129,8 +132,13 @@ img{
     border-radius: 25px;
 }
 
+.profile{
+    color: white;
+    font-size: 17px;
+}
+
 .profile img {
-    height: 5rem;
+    height: 10rem;
     border-radius: 50%;
 }
 
@@ -141,21 +149,29 @@ img{
 }
 
 .link img{
-    height: 2rem;
+    height: 4rem;
+    border-radius: 50%;
 }
+
+.about-me p{
+    font-size: 25px;
+}
+
+
 
 .container-two{
-    background: grey;
+    background: #C0C0C0;
     margin: 2.5%;
     width: 70%;
+    color: black;
 }
 
-.about-me{
+.about me{
     text-align: left;
 }
 
 .logos img{
-    height: 2.5rem;
+    height: 4rem;
     border-radius: 50%;
     margin: 0.5%;
 }
@@ -177,6 +193,7 @@ img{
 .projectsbutton a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 
 
