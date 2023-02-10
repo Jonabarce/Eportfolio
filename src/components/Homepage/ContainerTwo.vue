@@ -10,36 +10,22 @@
         </div>
         <div class="about-me">
             <h1>About me</h1>
-            <p>Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
-                Insert information her
+            <p>
+                <br>
+                My name is Jonatan Andre Vevang. I come from north norway and
+                im 20 years old
+                I am a student in Trondheim.
+                Im currently in my second year studying Computer enineering. 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </p>
         </div>
         <div class="technology-section">

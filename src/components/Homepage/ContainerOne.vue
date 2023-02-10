@@ -19,12 +19,12 @@
                     </a>
                 </div>
                 <div class="link">
-                    <a href="https://github.com/Jonabarce">
+                    <a href="https://github.com/Jonabarce" target="_blank">
                     <img src="../..//assets/Github.png" alt="">
                     <h2>Github</h2>
                     </a>
                 </div>
-                <div class="link">
+                <div class="link" target="_blank">
                     <a href="https://www.linkedin.com/in/jonatan-andre-vevang-53120b263/">
                     <img src="../..//assets/Linkedin.png" alt="">
                     <h2>Linkedin</h2>

@@ -3,6 +3,7 @@
         <h2>{{projectData.ProjectsArray[index].title}}</h2>
         <img :src="projectData.ProjectsArray[index].Image" alt="">
         <p>{{projectData.ProjectsArray[index].About}}</p>
+        <a v-bind:href="projectData.ProjectsArray[index].Link1" target="_blank">More information</a>
     </div>
 </template>
 
@@ -42,7 +43,28 @@ export default {
 }
 
 .project-card img{
-    height: 10rem;
+    height: 25rem;
+    border-radius: 10px;
+}
+
+.project-card p {
+    color: black;
+    font-size: 20px;
+}
+
+.project-card a {
+    text-decoration: none;
+    font-size: 23px;
+    background-color: 	#BA55D3;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+.project-card h2{
+    color: black;
+    font-size: 25px;
 }
 
 

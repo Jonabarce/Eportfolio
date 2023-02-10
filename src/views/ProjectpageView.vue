@@ -1,4 +1,5 @@
 <template>
+    <h1>My projects</h1>
     <Header></Header>
     <div class="main-container">
         <ProjectCard></ProjectCard>
@@ -27,13 +28,17 @@ export default{
 
 
 <style scoped>
-
-
 .main-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+h1{
+    font-size: 50px;
+    color: black;
+    text-decoration: underline;
 }
 
 
