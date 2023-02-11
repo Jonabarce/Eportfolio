@@ -43,7 +43,7 @@ export default {
 }
 
 .project-card img{
-    height: 25rem;
+    height: 20rem;
     border-radius: 10px;
 }
 
