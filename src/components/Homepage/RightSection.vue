@@ -29,6 +29,13 @@
                 <img src="../..//assets/mysql.png" alt="">
                 </div>
             </div>
+            <h3>Projects</h3>
+            <div class="projects">
+                <a @click="changeRoute('Projectpage')" href="">My projects</a>
+                <br>
+                <br>
+                <br>
+            </div>
         </div>
     </div>
 </template>
@@ -44,6 +51,11 @@ export default {
         return{
             projectData: jsonData,
             projectData2: jsonData2
+        }
+    },
+    methods: {
+        changeRoute(string){
+            this.$router.push({name:string})
         }
     }
 }
@@ -89,6 +101,13 @@ export default {
 h3{
     font-size: 25px;
     color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 25px;
 }
 
 
