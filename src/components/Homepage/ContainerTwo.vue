@@ -5,7 +5,7 @@
                 <a @click="changeRoute('Projectpage')" href="">My projects</a>
             </div>
             <div class="projectsbutton">
-                <a href="">My Resume</a>
+                <a @click="changeRoute('Resumepage')" href="">My Resume</a>
             </div>
         </div>
         <div class="about-me">
@@ -14,8 +14,8 @@
                 <br>
                 My name is Jonatan Andre Vevang. I come from north norway and
                 im 20 years old.
-                I am a student in Trondheim.
-                Im currently in my second year studying Computer engineering. 
+                I am a student in Trondheim,
+                currently in my second year studying Computer engineering. 
                 <br>
                 <br>
                 <br>

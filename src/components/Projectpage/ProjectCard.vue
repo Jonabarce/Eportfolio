@@ -47,6 +47,12 @@ export default {
     border-radius: 10px;
 }
 
+@media (max-width: 767px) {
+    .project-card img{
+        height: 15rem;
+    }
+}
+
 .project-card p {
     color: black;
     font-size: 20px;

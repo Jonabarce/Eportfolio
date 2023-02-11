@@ -4,7 +4,7 @@
                 <a @click="changeRoute('Homepage')" href="">Homepage</a>
             </div>
             <div class="projectsbutton">
-                <a href="">My Resume</a>
+                <a @click="changeRoute('Resumepage')" href="">My Resume</a>
         </div>
     </div>
 </template>
