@@ -1,0 +1,22 @@
+{
+    "ExperienceArray" : [
+        {
+            "Id" : 1,
+            "Title" : "Sales, service and administration",
+            "Company" : "Circle k Finnsnes and Bardufoss",
+            "About" : "I have worked in the family's businesses where i have gained experience over several years. Everything from cleaning, replenishment, sales, service, teamwork and accounting",
+            "Date" : "2015 -"
+        },
+        {
+            "Id" : 2,
+            "Title" : "Developer",
+            "Company" : "Index",
+            "About" : "Recently became a member of Index. Index works flexibly with the development of Tihlde's solutions including the website of the line association. Im currently working with frontend using react",
+            "Date" : "2023 - "
+        }
+
+
+
+
+    ]
+}

@@ -57,6 +57,13 @@
 }
 
 
+@media (max-width: 767px) {
+    .profile img{
+        height: 5rem;
+    }
+}
+
+
 .link a{
     text-decoration: none;
     color: whitesmoke;

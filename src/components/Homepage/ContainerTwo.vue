@@ -12,9 +12,9 @@
             <h1>About me</h1>
             <p>
                 <br>
-                My name is Jonatan Andre Vevang. I come from north norway and
-                im 20 years old.
-                I am a student in Trondheim,
+                My name is Jonatan Andre Vevang. I come from the north of norway.
+                I am 20 years old.
+                I am a student at NTNU in Trondheim,
                 currently in my second year studying Computer engineering. 
                 <br>
                 <br>
