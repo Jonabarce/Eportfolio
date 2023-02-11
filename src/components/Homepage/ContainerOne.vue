@@ -25,7 +25,7 @@
                     </a>
                 </div>
                 <div class="link" target="_blank">
-                    <a href="https://www.linkedin.com/in/jonatan-andre-vevang-53120b263/">
+                    <a href="https://www.linkedin.com/in/jonatan-andre-vevang-53120b263/" target="_blank">
                     <img src="../..//assets/Linkedin.png" alt="">
                     <h2>Linkedin</h2>
                     </a>

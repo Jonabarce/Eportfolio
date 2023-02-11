@@ -73,7 +73,7 @@ export default {
 
 
 .logos img{
-    height: 4rem;
+    height: 5rem;
     border-radius: 50%;
     margin: 0.5%;
 }
