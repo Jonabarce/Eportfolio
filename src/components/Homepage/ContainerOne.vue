@@ -31,7 +31,11 @@
                     </a>
                 </div>
         </div>
-        <button @click="openModal()">Icon credits</button>
+        <div class="button-container">
+            <div class="projectsbutton">
+                <button @click="openModal()">Icon credits</button>
+            </div>
+        </div>
         <div class="modal-overlay" v-if="showModal">
             <div class="modal-container">
                 <button @click="closeModal()">Close</button> 
@@ -98,6 +102,20 @@ button{
     margin: 50px;
     color: white;
     font-size: 15px;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.projectsbutton{
+    
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
 }
 
 button:hover{
