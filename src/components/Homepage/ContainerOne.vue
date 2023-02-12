@@ -36,8 +36,8 @@
                 <button @click="openModal()">Icon credits</button>
             </div>
         </div>
-        <div class="modal-overlay" v-if="showModal">
-            <div class="modal-container">
+        <div class="modal-overlay" v-if="showModal" @click="closeModal()">
+            <div class="modal-container" @click.stop>
                 <button @click="closeModal()">Close</button> 
                 <a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>
                 <br>
@@ -60,7 +60,6 @@
                 <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a>
                 <br>
                 <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
-                <button @click="closeModal()">Close</button> 
            </div>
         </div>
     </div>
