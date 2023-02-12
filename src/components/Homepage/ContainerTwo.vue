@@ -43,22 +43,18 @@
     </div>
 </template>
 
-
 <script>
-
 export default {
     methods: {
-        changeRoute(string){
-            this.$router.push({name:string})
+        changeRoute(string) {
+            this.$router.push({ name: string });
         }
     }
-}
-
-
-
+};
 </script>
 
 <style scoped>
+
 
 .container-two{
     background: 	#D3D3D3;
@@ -70,6 +66,7 @@ export default {
 .about-me p{
     font-size: 25px;
 }
+
 
 
 .logos img{
@@ -97,6 +94,4 @@ export default {
     color: white;
     font-size: 25px;
 }
-
-
 </style>
