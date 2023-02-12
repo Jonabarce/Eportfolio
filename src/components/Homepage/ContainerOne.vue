@@ -100,6 +100,10 @@ button{
     font-size: 15px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 
 
 .modal-overlay {
