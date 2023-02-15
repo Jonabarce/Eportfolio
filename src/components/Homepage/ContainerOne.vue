@@ -14,7 +14,7 @@
           <div class="modal-overlay" v-if="showPhoneModal" @click="closePhoneModal()">
             <div class="modal-container" @click.stop>
                 <br>
-                <a id="phonenumber" href="tel:+4712345678">+47 922 00 181</a>
+                <a id="phonenumber" href="tel:+4792200181">+47 922 00 181</a>
               <button @click="closePhoneModal()">Close</button> 
             </div>
           </div>
