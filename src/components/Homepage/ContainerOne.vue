@@ -45,7 +45,7 @@
       </div>
       <div class="modal-overlay" v-if="showCreditModal" @click="closeCreditModal()">
         <div class="modal-container" @click.stop>
-          <p id="modalP">Icon Credtis</p>
+          <p id="modalP">Icon credits</p>
                 <a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>
                 <br>
                 <a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Flat Icons - Flaticon</a>
