@@ -1,44 +1,51 @@
 <template>
     <div class="container-one">
-        <div class="profile">
-            <img src="../..//assets/Selfie.png" alt="">
-            <h3>Jonatan Andre Vevang</h3>
-            <p>Studying Computer Engineering at NTNU in Trondheim</p>
-        </div>
-        <div class="social-links">
-                <div class="link">
-                    <a href="">
-                    <img src="../..//assets/Phone.png" alt="">
-                    <h2>Phone</h2>
-                    </a>
-                </div>
-                <div class="link">
-                    <a href="mailto:javevang1@gmail.com">
-                    <img src="../..//assets/Email.png" alt="">
-                    <h2>Email</h2>
-                    </a>
-                </div>
-                <div class="link">
-                    <a href="https://github.com/Jonabarce" target="_blank">
-                    <img src="../..//assets/Github.png" alt="">
-                    <h2>Github</h2>
-                    </a>
-                </div>
-                <div class="link" target="_blank">
-                    <a href="https://www.linkedin.com/in/jonatan-andre-vevang-53120b263/" target="_blank">
-                    <img src="../..//assets/Linkedin.png" alt="">
-                    <h2>Linkedin</h2>
-                    </a>
-                </div>
-        </div>
-        <div class="button-container">
-            <div class="projectsbutton">
-                <button @click="openModal()">Icon credits</button>
-            </div>
-        </div>
-        <div class="modal-overlay" v-if="showModal" @click="closeModal()">
+      <div class="profile">
+        <img src="../..//assets/Selfie.png" alt="">
+        <h3>Jonatan Andre Vevang</h3>
+        <p>Studying Computer Engineering at NTNU in Trondheim</p>
+      </div>
+      <div class="social-links">
+        <div class="link">
+          <a @click.prevent="openPhoneModal()" href="">
+            <img src="../..//assets/Phone.png" alt="">
+            <h2>Phone</h2>
+          </a>
+          <div class="modal-overlay" v-if="showPhoneModal" @click="closePhoneModal()">
             <div class="modal-container" @click.stop>
-                <button @click="closeModal()">Close</button> 
+                <p id="modalP">Phonenumber:</p>
+                <a id="phonenumber" href="tel:+4792200181">+47 922 00 181</a>
+              <button id="closeButton" @click="closePhoneModal()">Close</button> 
+            </div>
+          </div>
+        </div>
+        <div class="link">
+          <a href="mailto:javevang1@gmail.com">
+            <img src="../..//assets/Email.png" alt="">
+            <h2>Email</h2>
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://github.com/Jonabarce" target="_blank">
+            <img src="../..//assets/Github.png" alt="">
+            <h2>Github</h2>
+          </a>
+        </div>
+        <div class="link" target="_blank">
+          <a href="https://www.linkedin.com/in/jonatan-andre-vevang-53120b263/" target="_blank">
+            <img src="../..//assets/Linkedin.png" alt="">
+            <h2>Linkedin</h2>
+          </a>
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="projectsbutton">
+          <button id="iconbutton" @click="openCreditModal()">Icon credits</button>
+        </div>
+      </div>
+      <div class="modal-overlay" v-if="showCreditModal" @click="closeCreditModal()">
+        <div class="modal-container" @click.stop>
+          <p id="modalP">Icon Credtis</p>
                 <a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>
                 <br>
                 <a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Flat Icons - Flaticon</a>
@@ -60,32 +67,42 @@
                 <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a>
                 <br>
                 <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
-           </div>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Freepik - Flaticon</a>
+                <button id="closeButton" @click="closeCreditModal()">Close</button> 
         </div>
+      </div>
     </div>
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  export default {
     data() {
-        return {
-            showModal: false
-        }
+      return {
+        showPhoneModal: false,
+        showCreditModal: false
+      }
     },
     methods: {
-        changeRoute(string) {
-            this.$router.push({ name: string });
-        },
-        openModal() {
-            this.showModal = true;
-        },
-        closeModal() {
-            this.showModal = false;
-        }
+      changeRoute(string) {
+        this.$router.push({ name: string });
+      },
+      openPhoneModal() {
+        this.showPhoneModal = true;
+      },
+      closePhoneModal() {
+        this.showPhoneModal = false;
+      },
+      openCreditModal() {
+        this.showCreditModal = true;
+      },
+      closeCreditModal() {
+        this.showCreditModal = false;
+      }
     }
-};
-
-</script>
+  };
+  </script>
+  
 
 <style scoped>
 
@@ -140,21 +157,36 @@ button:hover{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    width: 300px;
-    height: 200px;
+    border-radius: 15px;
+    
+    width: 350px;
+    height: 250px;
     overflow: auto;
     text-align: center;
     font-size: 15px;
 }
 
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+
+#phonenumber{
+    color: black;
+    font-size: 25px;
 }
+
+#modalP{
+  color: black;
+  font-size: 25px;
+}
+
+
+#closeButton{
+  color: white;
+  font-size: 15px;
+}
+
+#closeButton:hover{
+  text-decoration: underline;
+}
+
 
 .container-one{
     background-color: 	#3CB371;
@@ -194,6 +226,15 @@ button:hover{
     height: 4rem;
     border-radius: 50%;
 }
+
+a:hover{
+    text-decoration: underline;
+}
+
+#iconbutton:hover{
+    text-decoration: underline;
+}
+
 
 
 
