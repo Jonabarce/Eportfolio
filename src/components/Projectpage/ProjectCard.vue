@@ -68,6 +68,10 @@ export default {
     color: white;
 }
 
+.project-card a:hover{
+    text-decoration: underline;
+}
+
 .project-card h2{
     color: black;
     font-size: 25px;

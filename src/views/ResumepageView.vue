@@ -1,4 +1,5 @@
 <template>
+     <h1>My Resume</h1>
     <HeaderResume></HeaderResume>
     <div class="wrapper">
         <div class="main-container">
@@ -51,6 +52,11 @@ export default {
     width: 85%;
 }
 
+h1{
+    font-size: 50px;
+    color: black;
+    text-decoration: underline;
+}
 
 
 
