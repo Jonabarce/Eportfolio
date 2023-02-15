@@ -14,11 +14,12 @@
 import ContainerOne from '../components/Homepage/ContainerOne.vue'
 import ContainerTwo from '../components/Homepage/ContainerTwo.vue'
 
+
 export default {
     name: 'HomepageView',
     components : {
         ContainerOne,
-        ContainerTwo
+        ContainerTwo,
     },
 };
 
@@ -33,6 +34,17 @@ export default {
 .wrapper{
     display: flex;
     justify-content: center;
+}
+
+.w{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
 }
 
 .main-container{
