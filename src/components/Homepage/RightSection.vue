@@ -31,7 +31,7 @@
             </div>
             <h3>Projects</h3>
             <div class="projects">
-                <a @click="changeRoute('Projectpage')" href="">My projects</a>
+                <a id="myprojects" @click="changeRoute('Projectpage')" href="">My projects</a>
                 <br>
                 <br>
                 <br>
@@ -101,14 +101,21 @@ export default {
 h3{
     font-size: 25px;
     color: white;
+    text-decoration: underline;
 }
 
 a{
     text-decoration: none;
     color: white;
-    text-decoration: underline;
     font-size: 25px;
 }
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
 
 
 </style>

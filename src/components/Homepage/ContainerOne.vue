@@ -40,7 +40,7 @@
       </div>
       <div class="button-container">
         <div class="projectsbutton">
-          <button @click="openCreditModal()">Icon credits</button>
+          <button id="iconbutton" @click="openCreditModal()">Icon credits</button>
         </div>
       </div>
       <div class="modal-overlay" v-if="showCreditModal" @click="closeCreditModal()">
@@ -215,6 +215,15 @@ button:hover{
     height: 4rem;
     border-radius: 50%;
 }
+
+a:hover{
+    text-decoration: underline;
+}
+
+#iconbutton:hover{
+    text-decoration: underline;
+}
+
 
 
 
