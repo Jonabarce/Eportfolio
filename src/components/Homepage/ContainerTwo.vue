@@ -11,13 +11,11 @@
         <div class="about-me">
             <h1>About me</h1>
             <p>
+
                 My name is Jonatan Andre Vevang. I'm from the north of Norway.
                 I am 20 years old, and
                 a student at NTNU in Trondheim.
                 Currently i'm my second year studying computer engineering. 
-                <br>
-                <br>
-                <br>
                 <br>
                 <br>
                 <br>
