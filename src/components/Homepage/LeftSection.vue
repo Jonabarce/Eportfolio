@@ -1,21 +1,35 @@
 <template>
-   <div class="container-one">
+    <div class="container-one">
       <div class="profile">
-         <img src="../..//assets/Selfie.png" alt="">
-         <h3>Jonatan Andre Vevang</h3>
-         <p>Studying Computer Engineering at NTNU in Trondheim</p>
+        <img src="../..//assets/Selfie.png" alt="">
+        <h3>Jonatan Andre Vevang</h3>
+        <p>Studying Computer Engineering at NTNU in Trondheim</p>
       </div>
       <div class="about-me">
-         <p>                My name is Jonatan Andre Vevang. I come from the north of Norway.
-                I am 20 years old.
-                I am a student at NTNU in Trondheim,
-                currently in my second year studying Computer engineering. 
-         </p>
+        <p>My name is Jonatan Andre Vevang. I come from the north of Norway. I am 20 years old. I am a student at NTNU in Trondheim, currently in my second year studying Computer engineering. </p>
       </div>
     </div>
-</template>
-
-
+  </template>
+  
+<script>
+    function downloadResume() {
+      const fileUrl = 'path/to/resume.pdf'; // Replace with the actual path to your PDF file
+      const fileName = 'resume.pdf';
+  
+      fetch(fileUrl)
+        .then(response => response.blob())
+        .then(blob => {
+          // Create a link element with a download attribute to download the PDF file
+          const link = document.createElement('a');
+          link.href = window.URL.createObjectURL(new Blob([blob]));
+          link.setAttribute('download', fileName);
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+    }
+</script>
+  
 
 
 <style scoped>
@@ -63,6 +77,20 @@ p{
    color: white;
 }
 
+
+button{
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 
 

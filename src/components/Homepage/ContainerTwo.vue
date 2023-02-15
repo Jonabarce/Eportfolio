@@ -37,6 +37,7 @@
                 <img src="../..//assets/css-3.png" alt="">
                 <img src="../..//assets/js.png" alt="">
                 <img src="../..//assets/vue.png" alt="">
+                <img src="../..//assets/react.png" alt="">
                 <img src="../..//assets/mysql.png" alt="">
             </div>
         </div>

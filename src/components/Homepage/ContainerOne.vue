@@ -13,9 +13,9 @@
           </a>
           <div class="modal-overlay" v-if="showPhoneModal" @click="closePhoneModal()">
             <div class="modal-container" @click.stop>
-                <br>
+                <p id="modalP">Phonenumber:</p>
                 <a id="phonenumber" href="tel:+4792200181">+47 922 00 181</a>
-              <button @click="closePhoneModal()">Close</button> 
+              <button id="closeButton" @click="closePhoneModal()">Close</button> 
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@
       </div>
       <div class="modal-overlay" v-if="showCreditModal" @click="closeCreditModal()">
         <div class="modal-container" @click.stop>
-          <button @click="closeCreditModal()">Close</button> 
+          <p id="modalP">Icon Credtis</p>
                 <a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>
                 <br>
                 <a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Flat Icons - Flaticon</a>
@@ -67,6 +67,9 @@
                 <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a>
                 <br>
                 <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Freepik - Flaticon</a>
+                <button id="closeButton" @click="closeCreditModal()">Close</button> 
         </div>
       </div>
     </div>
@@ -154,10 +157,10 @@ button:hover{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    width: 300px;
-    height: 200px;
+    border-radius: 15px;
+    
+    width: 350px;
+    height: 250px;
     overflow: auto;
     text-align: center;
     font-size: 15px;
@@ -169,13 +172,21 @@ button:hover{
     font-size: 25px;
 }
 
-
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+#modalP{
+  color: black;
+  font-size: 25px;
 }
+
+
+#closeButton{
+  color: white;
+  font-size: 15px;
+}
+
+#closeButton:hover{
+  text-decoration: underline;
+}
+
 
 .container-one{
     background-color: 	#3CB371;
