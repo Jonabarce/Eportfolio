@@ -6,7 +6,7 @@
         <p>Studying Computer Engineering at NTNU in Trondheim</p>
       </div>
       <div class="about-me">
-        <p>My name is Jonatan Andre Vevang. I come from the north of Norway. I am 20 years old. I am a student at NTNU in Trondheim, currently in my second year studying Computer engineering. </p>
+        <p>My name is Jonatan Andre Vevang. I'm from the north of Norway. I am 20 years old. I am a student at NTNU in Trondheim, currently in my second year studying Computer engineering. </p>
       </div>
     </div>
   </template>
