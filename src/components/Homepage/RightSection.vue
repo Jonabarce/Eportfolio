@@ -20,14 +20,14 @@
             <h3>Skills</h3>
             <div class="skills">
                 <div class="logos">
-                <img src="../../assets/java.png" alt="">
-                <img src="../../assets/python.png" alt="">
-                <img src="../..//assets/html-5.png" alt="">
-                <img src="../..//assets/css-3.png" alt="">
-                <img src="../..//assets/js.png" alt="">
-                <img src="../..//assets/vue.png" alt="">
-                <img src="../..//assets/react.png" alt="">
-                <img src="../..//assets/mysql.png" alt="">
+                    <img src="../../assets/java.png" alt="" title="Java">
+                    <img src="../../assets/python.png" alt="" title="Python">
+                    <img src="../..//assets/html-5.png" alt="" title="HTML">
+                    <img src="../..//assets/css-3.png" alt="" title="CSS">
+                    <img src="../..//assets/js.png" alt="" title="JavaScript">
+                    <img src="../..//assets/vue.png" alt="" title="Vue.js">
+                    <img src="../..//assets/react.png" alt="" title="React">
+                    <img src="../..//assets/mysql.png" alt="" title="MySQL">
                 </div>
             </div>
             <h3>Projects</h3>
