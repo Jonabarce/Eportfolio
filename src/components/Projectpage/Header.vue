@@ -31,10 +31,10 @@ export default {
 
 
 .button-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 5%;
+    background-color: black;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .projectsbutton{

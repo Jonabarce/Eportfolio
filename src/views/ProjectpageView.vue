@@ -1,9 +1,12 @@
 <template>
-    <h1>My projects</h1>
-    <Header></Header>
-    <div class="main-container">
-        <ProjectCard></ProjectCard>
-    </div>
+    <body>
+        <div class="header">
+            <Header></Header>
+        </div>
+        <div class="main-container">
+            <ProjectCard></ProjectCard>
+        </div>
+    </body>
 </template>
 
 
@@ -29,10 +32,22 @@ export default{
 
 <style scoped>
 .main-container{
-    display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 90px;
+    width: 80%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    position: fixed;
+    margin: 0 auto;
+    width: 95%;
+    height: 90%;
 }
 
 h1{

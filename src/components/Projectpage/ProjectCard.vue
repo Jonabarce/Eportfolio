@@ -1,9 +1,13 @@
 <template>
-    <div class="project-card" v-for="(items,index) in projectData.ProjectsArray" v-bind:key="items">
-        <h2>{{projectData.ProjectsArray[index].title}}</h2>
-        <img :src="projectData.ProjectsArray[index].Image" alt="">
-        <p>{{projectData.ProjectsArray[index].About}}</p>
-        <a v-bind:href="projectData.ProjectsArray[index].Link1" target="_blank">More information</a>
+    <div class="wrapper">
+        <div class="main-container">
+            <div class="project-card" v-for="(items,index) in projectData.ProjectsArray" v-bind:key="items">
+                <h2>{{projectData.ProjectsArray[index].title}}</h2>
+                <img :src="projectData.ProjectsArray[index].Image" alt="">
+                <p>{{projectData.ProjectsArray[index].About}}</p>
+                <a v-bind:href="projectData.ProjectsArray[index].Link1" target="_blank">More information</a>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -31,7 +35,21 @@ export default {
 
 <style sscoped>
 
+.wrapper{
+    justify-content: center;
+}
 
+.main-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    grid-template-columns: auto !important;
+  }
+}
 
 .project-card{
     margin: 10px;
