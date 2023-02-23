@@ -7,10 +7,6 @@
       </div>
       <div class="social-links">
         <div class="link">
-          <a @click.prevent="openPhoneModal()" href="">
-            <img src="../..//assets/Phone.png" alt="">
-            <h2>Phone</h2>
-          </a>
           <div class="modal-overlay" v-if="showPhoneModal" @click="closePhoneModal()">
             <div class="modal-container" @click.stop>
                 <p id="modalP">Phonenumber:</p>
